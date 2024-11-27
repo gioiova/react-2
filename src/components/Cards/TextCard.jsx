@@ -7,14 +7,19 @@ const TextCard = ({
   navLink,
   className,
   increase,
-  showNavLink = true
+  showNavLink = true,
+  titleColor = "text-black",
+  valueColor = "text-black",
+  subText ,
+  subTextColor = "text-black",
 }) => {
   return (
     <div
       className={`bg-white p-4 shadow-md rounded-md flex flex-col gap-2 ${className}`}
     >
-      <h1 className="text-[20px] font-semibold ">{title}</h1>
-      <h2 className="font-medium text-[48px] flex items-center gap-2">
+           <h1 className={`text-[20px] font-semibold ${titleColor}`}>{title}</h1>
+
+      <h2 className={`font-medium text-[48px] flex items-center gap-2 ${valueColor}`}>
         {value}{" "}
         <span>
           {increase && (
@@ -36,6 +41,7 @@ const TextCard = ({
           )}
         </span>
       </h2>
+      <h3 className={` font-semibold text-[26px] ${subTextColor} `}  > {subText} </h3>
       <p className="font-normal text-[14px]">{description}</p>
       {showNavLink && navLink && (
         <a 

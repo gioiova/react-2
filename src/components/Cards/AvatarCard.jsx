@@ -6,11 +6,12 @@ const AvatarCard = ({
   title, 
   navLink, 
   description, 
-  showNavLink = true // New prop to control nav link visibility
+  showNavLink = true,
+  titleColor = "text-black",
 }) => {
   return (
     <div className={`bg-white p-4 shadow-md rounded-md flex flex-col gap-2 ${className}`}>
-      <h1 className="text-[20px] font-semibold">{title}</h1>
+           <h1 className={`text-[20px] font-semibold ${titleColor}`}>{title}</h1>
       
       <div className="flex flex-col gap-4">
         {description.map((item, index) => (

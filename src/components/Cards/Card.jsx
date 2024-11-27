@@ -13,6 +13,10 @@ const Card = ({
   increase,
   svvg,
   showNavLink,
+  titleColor,
+  valueColor,
+  subText,
+  subTextColor,
 }) => {
   const renderCard = () => {
     switch (theme) {
@@ -25,6 +29,10 @@ const Card = ({
             navLink={navLink}
             className={className}
             increase={increase}
+            titleColor={titleColor}
+            valueColor = {valueColor}
+            subText={subText}
+            subTextColor={subTextColor}
           />
         );
       case "chart":
@@ -46,6 +54,8 @@ const Card = ({
             description={description}
             navLink={navLink}
             className={className}
+            titleColor={titleColor}
+            valueColor = {valueColor}
           />
         );
      

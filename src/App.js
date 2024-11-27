@@ -105,7 +105,10 @@ function App() {
                 className="w-[32%]"
                 title="Top Month"
                 value="November"
-                description="2019"
+                subText="2019"
+                titleColor="text-mid_gray" 
+                valueColor="text-dark_orange"
+                subTextColor = "text-orange"
                 theme="text"
                 showNavLink={false}
               />
@@ -113,14 +116,18 @@ function App() {
                 className="w-[32%]"
                 title="Top Year"
                 value="2023"
-                description="96K Sold So Far"
+                subText="96K Sold So Far"
                 theme="text"
+                titleColor="text-mid_gray" 
+                valueColor="text-dark_orange"
+                subTextColor = "text-mid_gray"
                 showNavLink={false}
               />
               <Card
                 className="w-[32%]"
                 title="Top Buyer"
                 value="90"
+                titleColor="text-mid_gray" 
                 description={customersData.slice(0,1)}
                 theme="avatar"
               />
